@@ -1158,6 +1158,17 @@ Portfolio
   margin-top: 0px;
 }
 
+#agencies .agency-col {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  #agencies .agency-col {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
 .our-portfolio .section-heading h2 {
   text-align: center;
   margin: 0px 90px 0px 90px;
@@ -1179,7 +1190,7 @@ Portfolio
 }
 
 .our-portfolio .item:hover .hidden-content {
-  top: -100px;
+  top: -120px;
   opacity: 1;
   visibility: visible;
 }
@@ -1193,7 +1204,11 @@ Portfolio
   background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
   padding: 30px;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
+  width: 420px;
+  max-width: calc(100vw - 60px);
+  left: 50%;
+  transform: translateX(-50%);
   opacity: 0;
   top: 0;
   visibility: hidden;
