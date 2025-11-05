@@ -1,4 +1,4 @@
-/* 
+/*
 
 TemplateMo 562 Space Dynamic
 
@@ -23,16 +23,16 @@ Table of contents
 12. portfolio
 
 --------------------------------------------- */
-/* 
+/*
 ---------------------------------------------
 font & reset css
---------------------------------------------- 
+---------------------------------------------
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* 
+/*
 ---------------------------------------------
 reset
---------------------------------------------- 
+---------------------------------------------
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
@@ -135,10 +135,10 @@ img {
   overflow: hidden;
 }
 
-/* 
+/*
 ---------------------------------------------
 global styles
---------------------------------------------- 
+---------------------------------------------
 */
 html,
 body {
@@ -232,10 +232,10 @@ body {
   letter-spacing: 0.25px;
 }
 
-/* 
+/*
 ---------------------------------------------
 header
---------------------------------------------- 
+---------------------------------------------
 */
 
 .background-header {
@@ -723,10 +723,10 @@ header
   }
 }
 
-/* 
+/*
 ---------------------------------------------
 preloader
---------------------------------------------- 
+---------------------------------------------
 */
 
 .js-preloader {
@@ -825,10 +825,10 @@ preloader
 
 
 
-/* 
+/*
 ---------------------------------------------
 Banner Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 .main-banner {
@@ -937,10 +937,10 @@ Banner Style
 
 
 
-/* 
+/*
 ---------------------------------------------
 About Us Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 #about {
@@ -953,6 +953,49 @@ About Us Style
   background-position: center center;
   background-size: cover;
   padding: 140px 0px 120px 0px;
+}
+
+.about-us .section-heading {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 40px 45px;
+  border-radius: 24px;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-us .section-heading p {
+  color: #1c1c1c;
+  margin-bottom: 18px;
+}
+
+.about-us .section-heading > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-us .section-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #03a4ed;
+  margin-bottom: 12px;
+}
+
+.about-us .about-callouts {
+  background: rgba(3, 164, 237, 0.12);
+  border-left: 4px solid #03a4ed;
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin: 28px 0;
+}
+
+.about-us .about-points {
+  list-style: disc;
+  margin: 0 0 0 20px;
+  padding: 0;
+  color: #1c1c1c;
+}
+
+.about-us .about-points li {
+  line-height: 30px;
+  font-size: 15px;
 }
 
 .about-us .left-image {
@@ -984,10 +1027,10 @@ About Us Style
 }
 
 
-/* 
+/*
 ---------------------------------------------
 Services Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 .our-services {
@@ -1073,10 +1116,10 @@ Services Style
 }
 
 
-/* 
+/*
 ---------------------------------------------
 Portfolio
---------------------------------------------- 
+---------------------------------------------
 */
 
 .our-portfolio {
@@ -1094,6 +1137,14 @@ Portfolio
 
 .our-portfolio .item {
   position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.our-portfolio .item:hover {
+  z-index: 20;
+  transform: translateY(-6px);
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.12);
 }
 
 .our-portfolio .item:hover .hidden-content {
@@ -1116,7 +1167,7 @@ Portfolio
   top: 0;
   visibility: hidden;
   position: absolute;
-  z-index: 2;
+  z-index: 25;
   transition: all 0.5s;
 }
 
@@ -1162,10 +1213,10 @@ Portfolio
 }
 
 
-/* 
+/*
 ---------------------------------------------
 Blog
---------------------------------------------- 
+---------------------------------------------
 */
 
 .our-blog {
@@ -1281,10 +1332,10 @@ Blog
 }
 
 
-/* 
+/*
 ---------------------------------------------
 contact
---------------------------------------------- 
+---------------------------------------------
 */
 
 .contact-us {
@@ -1414,10 +1465,10 @@ form#contact button:hover {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 Footer Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 footer p {
@@ -1429,10 +1480,10 @@ footer p a {
   color: #fe3f40;
 }
 
-/* 
+/*
 ---------------------------------------------
 responsive
---------------------------------------------- 
+---------------------------------------------
 */
 
 @media (max-width: 1645px) {
@@ -1465,6 +1516,13 @@ responsive
     position: relative;
     background-image: none;
     padding: 0px;
+  }
+  .about-us .section-heading {
+    padding: 30px;
+    box-shadow: 0px 18px 30px rgba(0, 0, 0, 0.1);
+  }
+  .about-us .about-callouts {
+    padding: 22px;
   }
   .about-us .left-image {
     margin-right: 0px;
@@ -1548,6 +1606,9 @@ responsive
 @media (max-width: 767px) {
   .about-us .left-image {
     bottom: -280px;
+  }
+  .about-us .section-heading {
+    padding: 26px 22px;
   }
   .our-blog .right-list {
     margin-left: 0px;
