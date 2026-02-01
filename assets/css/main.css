@@ -2596,6 +2596,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			border: 2px solid black;
 		}
 
 		.image.left, .image.right {
